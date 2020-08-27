@@ -8,12 +8,14 @@
         :default-selected-keys="['1']"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1"><router-link :to="{name:'Home'}">nav 1</router-link></a-menu-item>
-        <a-menu-item key="2">nav 2</a-menu-item>
-        <a-menu-item key="3">nav 3</a-menu-item>
+        <a-menu-item key="1"><router-link :to="{name:'Search'}">搜索</router-link></a-menu-item>
+        <a-menu-item key="2"><router-link :to="{name:'Rank'}">排行榜</router-link></a-menu-item>
+        <a-menu-item key="3"><router-link :to="{name:'Setting'}">设置</router-link></a-menu-item>
       </a-menu>
     </a-layout-header>
-    <router-view />
+    <a-layout-content style="padding: 0 50px">
+      <router-view />
+    </a-layout-content>
     <a-layout-footer style="text-align: center">Created by 好多梨</a-layout-footer>
   </a-layout>
 </template>
